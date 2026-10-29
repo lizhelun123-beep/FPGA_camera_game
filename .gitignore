@@ -1,0 +1,32 @@
+# Local environments, generated output and hardware tool caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.godot/
+*.import
+node_modules/
+.npm-cache/
+.playwright-cli/
+.Xil/
+*.cache/
+*.gen/
+*.runs/
+*.sim/
+*.ip_user_files/
+*.jou
+*.log
+*.pb
+*.o
+*.obj
+*.map
+/build/
+/output/
+/pc_vision/output/
+/web_upper/pc_vision/output/
+/color_test/build/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+# firmware/version14 is an intentional, tracked release (not ignored).

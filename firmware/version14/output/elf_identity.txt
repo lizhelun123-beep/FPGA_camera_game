@@ -1,0 +1,32 @@
+{
+  "entry": 1048576,
+  "load_address": 1048576,
+  "file_bytes": 180240,
+  "memory_bytes": 171028480,
+  "flags": "0x5000400",
+  "payload_sha256": "d9ff11b16b77bf1b6de3bb2e526970e24061754e639c39d8d9a26601713f2771",
+  "required_symbols": [
+    "main",
+    "game_beam_submit",
+    "beam_wire_pose_encode",
+    "beam_wire_feed",
+    "beam_wire_control_decode",
+    "beam_wire_sync_reply",
+    "beam_control_parse",
+    "beam_control_receive",
+    "beam_control_display_retired",
+    "game_beam_reconfigure",
+    "vision_detect_bgr888",
+    "game_beam_display_snapshot",
+    "ray_game_trace_from_emitter_policy",
+    "game_display_submit",
+    "game_display_poll",
+    "beam_uart_log_poll",
+    "vision_get_detection_diagnostics",
+    "game_baremetal_capture_copy",
+    "game_beam_first_fault",
+    "sensor_start",
+    "sensor_stop"
+  ],
+  "no_dynamic_loader": true
+}

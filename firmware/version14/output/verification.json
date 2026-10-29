@@ -1,0 +1,110 @@
+{
+  "status": "PASS_STANDALONE_BOOT_PARTITIONS",
+  "scope": "offline compiled artifact only; no hardware",
+  "inputs": {
+    "xsa_sha256": "03ae58ac8483359101e5286931effb0d84544f4b9b6c215572ff88653011e0c8",
+    "bit_sha256": "a5a88800af559c2e95ad67453deab7d4ec5bdfeaa3eccddc7279f0f2f64f3e55",
+    "hwh_sha256": "dc899d44a94c1c98ffd6b7178e64f78ff6576ff3e4889759b291b659baba347c",
+    "csi_minor": 1,
+    "csi_counters_coherent": false,
+    "display_status_mask": 1,
+    "game_config_sha256": "79a25e5361367c4fb8bdba40cea9c0e2c3cd1d4550527b8cc94a7d0cf32a1f13",
+    "baseline": {
+      "profile": "historical_live_20261026",
+      "verified_files": 12,
+      "validation_sha256": "0c3cb69acc30073efb8855ed03c88745073c24d20d2463a2bdaf8ad6777e2dfe",
+      "platform": "D:\\Workspace\\AMD_camera\\FPGA-main\\FPGA-main\\color_test\\build\\vision_ps_baremetal\\vision_ps_platform",
+      "runtime_evidence": "output/build/game_app/jtag_camera_pc_20261026_1/status_live.log",
+      "runtime_evidence_scope": "historical 1442 submissions; not a new application pass"
+    }
+  },
+  "elf": {
+    "entry": 1048576,
+    "load_address": 1048576,
+    "file_bytes": 180240,
+    "memory_bytes": 171028480,
+    "flags": "0x5000400",
+    "payload_sha256": "d9ff11b16b77bf1b6de3bb2e526970e24061754e639c39d8d9a26601713f2771",
+    "required_symbols": [
+      "main",
+      "game_beam_submit",
+      "beam_wire_pose_encode",
+      "beam_wire_feed",
+      "beam_wire_control_decode",
+      "beam_wire_sync_reply",
+      "beam_control_parse",
+      "beam_control_receive",
+      "beam_control_display_retired",
+      "game_beam_reconfigure",
+      "vision_detect_bgr888",
+      "game_beam_display_snapshot",
+      "ray_game_trace_from_emitter_policy",
+      "game_display_submit",
+      "game_display_poll",
+      "beam_uart_log_poll",
+      "vision_get_detection_diagnostics",
+      "game_baremetal_capture_copy",
+      "game_beam_first_fault",
+      "sensor_start",
+      "sensor_stop"
+    ],
+    "no_dynamic_loader": true
+  },
+  "outputs": [
+    {
+      "path": "color_test/build/beam_standalone/restored_binary_v3_1/output/beam_standalone.elf",
+      "bytes": 978496,
+      "sha256": "1fe1fd1ad758c2e2c6be676f38e437e3272782fbc7aa18c575e4316e09e76479"
+    },
+    {
+      "path": "color_test/build/beam_standalone/restored_binary_v3_1/output/BOOT.BIN",
+      "bytes": 2278608,
+      "sha256": "4abcf689a6fc933c946851915aceaaca7850e7e457a930c66f098f5229b5fe88"
+    }
+  ],
+  "hardware_operated": false,
+  "partitions": [
+    {
+      "input": "color_test/build/beam_standalone/restored_binary_v3_1/inputs/fsbl.elf",
+      "offset": 5888,
+      "bytes": 98312,
+      "sha256": "6a970e2cbbbab18e9fc18aab4e40cc970ad62e0daa1fa40808b5d2bd4adfbbe9",
+      "payload_equal": true,
+      "entry": 0,
+      "load_address": 0,
+      "file_bytes": 98312,
+      "memory_bytes": 119808,
+      "flags": "0x5000400"
+    },
+    {
+      "input": "color_test/build/beam_standalone/restored_binary_v3_1/inputs/system_wrapper.bit",
+      "offset": 104256,
+      "bytes": 1994080,
+      "sha256": "355a914c89b5bef4cfdecaa683e4b62be4e6c758c5305af2ec25417a67eb876f",
+      "payload_equal": true,
+      "entry": 0,
+      "load_address": 0
+    },
+    {
+      "input": "color_test/build/beam_standalone/restored_binary_v3_1/output/beam_standalone.elf",
+      "offset": 2098368,
+      "bytes": 180240,
+      "sha256": "d9ff11b16b77bf1b6de3bb2e526970e24061754e639c39d8d9a26601713f2771",
+      "payload_equal": true,
+      "entry": 1048576,
+      "load_address": 1048576,
+      "file_bytes": 180240,
+      "memory_bytes": 171028480,
+      "flags": "0x5000400"
+    }
+  ],
+  "memory_layout": {
+    "fsbl_start": 0,
+    "fsbl_end": 119808,
+    "application_start": 1048576,
+    "application_end": 172077056,
+    "executable_regions_disjoint": true,
+    "pl_partition_destination": "configuration device (partition attribute0x20); load_address0 is not executable DDR",
+    "bootgen_overlap_notice": "Same notice as preserved live BOOT; partition bytes/attributes and executable ranges checked"
+  }
+}

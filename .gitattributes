@@ -1,0 +1,9 @@
+# Preserve the exact release bytes and SHA256SUMS across Git checkouts.
+* -text
+*.png binary
+*.pdf binary
+*.xsa binary
+*.bit binary
+*.elf binary
+*.BIN binary
+*.a binary
